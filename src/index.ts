@@ -26,11 +26,11 @@ async function getDefs() {
   return Object.values(keyed);
 }
 
-function generateFiles(decodedDefs) {
+function generateFiles(decodedDefs: { name: string; version: number; def: string[]; }[]) {
   const types = [];
   const hooks = [];
   const imports = [];
-  // @ts-ignore
+
   for (const { name, version, def } of decodedDefs) {
     console.log(name);
     const parsedDef = parseDefinition(def);

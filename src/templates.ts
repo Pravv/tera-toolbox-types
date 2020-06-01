@@ -31,6 +31,6 @@ ${hooks.join('\n')}
 `.trimStart();
 }
 
-export function generatePacketImport(name: string, version: string) {
+export function generatePacketImport(name: string, version: number) {
   return `import { ${name}_${version} } from '../defs/${name}_${version}';`;
 }
