@@ -29,12 +29,12 @@ export function parseDefinition(rawDefinition: string[]) {
 }
 
 interface Definition {
-  name: string,
-  type: string,
-  subtype: string,
-  comment: string
+  name: string;
+  type: string;
+  subtype: string;
+  comment: string;
 
-  fields: Definition[],
+  fields: Definition[];
 }
 
 function parse(rawDefinition: string[], nesting = 0): { definitions: Definition[]; linesIngested } {
@@ -66,13 +66,11 @@ function parse(rawDefinition: string[], nesting = 0): { definitions: Definition[
   return { definitions, linesIngested: iter.position + 1 };
 }
 
-
 function splitLine(lineRaw) {
   const [line, commentRaw] = lineRaw.split('#').map(string => string.trim());
 
   const comment = commentRaw ? `  ${commentRaw}` : '';
   if (!line || line === '') return { comment };
-
 
   const match = line.match(/^((?:-\s*)*)(\S+?)(<\s*\S+\s*>)?(\[\s*\S+\s*\])?\s+(\S+)$/);
   if (!match) {

@@ -48,5 +48,4 @@ export function generateDefIndexFile(defs) {
 `;
 }
 
-
 export { S_GET_USER_LIST_17 } from '../types/defs/S_GET_USER_LIST_17';

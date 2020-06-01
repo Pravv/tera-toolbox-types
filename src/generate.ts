@@ -14,6 +14,7 @@ function stringToTsType(type) {
 }
 
 class Serializer {
+  // eslint-disable-next-line @typescript-eslint/no-parameter-properties,no-useless-constructor
   constructor(public packetName) {}
 
   array(varName, subtype, fields) {
@@ -60,8 +61,3 @@ export function generate(packetName, definition, topLevel = false) {
 
   return { subClasses, mainClass };
 }
-
-
-
-
-

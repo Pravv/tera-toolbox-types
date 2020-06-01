@@ -31,7 +31,7 @@ async function getDefs() {
   return Object.values(keyed);
 }
 
-function generateFiles(decodedDefs: { name: string; version: number; def: string[]; }[]) {
+function generateFiles(decodedDefs: { name: string; version: number; def: string[] }[]) {
   const types = [];
   const hooks = [];
   const imports = [];
@@ -44,7 +44,7 @@ function generateFiles(decodedDefs: { name: string; version: number; def: string
     const hook = generateHookDeclaration(name, version);
     types.push({ type, name: `${name}_${version}` });
     hooks.push(hook);
-    //imports.push(generatePacketImport(name, version));
+    // imports.push(generatePacketImport(name, version));
     imports.push(`${name}_${version}`);
   }
 
@@ -63,8 +63,8 @@ async function main() {
     fs.writeFileSync(path.join(rootPath, 'defs', `${type.name}.ts`), type.type);
   }
 
-  fs.writeFileSync(path.join(rootPath, 'defs', `index.ts`), generateDefIndexFile(imports));
-  fs.writeFileSync(path.join(rootPath, 'lib', `Mod.ts`), generateModFile(imports, hooks));
+  fs.writeFileSync(path.join(rootPath, 'defs', 'index.ts'), generateDefIndexFile(imports));
+  fs.writeFileSync(path.join(rootPath, 'lib', 'Mod.ts'), generateModFile(imports, hooks));
 }
 
 main().catch(e => console.log(e));
