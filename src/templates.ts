@@ -1,12 +1,11 @@
 export function generatePacketFile(mainClass, subClasses, firstLineComment) {
   const commentTemplate = (firstLineComment && firstLineComment !== '') ? `// ${firstLineComment}` : '';
-
+  subClasses.push(mainClass);
   return `\
 ${commentTemplate}
-import {Vec3, SkillId, Customize, PacketBase} from '../lib/Common';  
+import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common';  
 
 ${subClasses.join('\n')}
-${mainClass}
 `.trimStart();
 }
 
@@ -38,5 +37,5 @@ export function generatePacketImport(name: string, version: number) {
 }
 
 export function generateHookDeclaration(name: string, version: number) {
-  return `  hook(packet: '${name}_${version}', version: ${version} | '*', options?: HookOptions | CallbackFunction<${name}_${version}>, cb?: CallbackFunction<${name}_${version}>);`;
+  return `  hook(packet: '${name}', version: ${version} | '*', options?: HookOptions | CallbackFunction<${name}_${version}>, cb?: CallbackFunction<${name}_${version}>);`;
 }

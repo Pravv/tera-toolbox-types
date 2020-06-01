@@ -1,5 +1,5 @@
 // # majorPatchVersion >= 86
-import {Vec3, SkillId, Customize, PacketBase} from '../lib/Common';  
+import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common';  
 
 
 export class S_LOGIN_14_servants {
@@ -82,8 +82,8 @@ export class S_LOGIN_14 extends PacketBase {
   scale: number
   guildLogoId: number
   name: string
-  details: bytes
-  shape: bytes
+  details: number[]
+  shape: number[]
 
   /**
      see S_REQUEST_SERVANT_INFO_LIST

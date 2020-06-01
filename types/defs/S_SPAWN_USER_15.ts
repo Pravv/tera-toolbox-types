@@ -1,5 +1,4 @@
-import {Vec3, SkillId, Customize, PacketBase} from '../lib/Common';  
-
+import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common';  
 
 
 export class S_SPAWN_USER_15 extends PacketBase {
@@ -84,7 +83,7 @@ export class S_SPAWN_USER_15 extends PacketBase {
   name: string
   guildName: string
   guildRank: string
-  details: bytes
+  details: number[]
   guildLogo: string
-  shape: bytes
+  shape: number[]
 }

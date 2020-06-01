@@ -12,10 +12,15 @@ async function getDefs() {
     .then(res => res.text())
     .then(body => JSON.parse(body));
 
+  const opcodes = Object.values(data.maps)[0];
+
   const decodedDefs = Object.entries<string>(data.protocol)
     .map(([key, value]) => {
       if (key.includes('.js')) return null;
+
       const [name, version] = key.split('.');
+      if (!opcodes[name]) return null;
+
       return { name, version: parseInt(version), def: fromBase64(value, 'utf-8').split(/\r?\n/) };
     })
     .filter(value => !!value);
@@ -51,6 +56,8 @@ async function main() {
 
   const { types, hooks, imports } = generateFiles(decodedDefs);
 
+  cleanUp(rootPath);
+
   for (const type of types) {
     fs.writeFileSync(path.join(rootPath, 'defs', `${type.name}.ts`), type.type);
   }
@@ -60,3 +67,12 @@ async function main() {
 }
 
 main().catch(e => console.log(e));
+
+function cleanUp(rootPath) {
+  const files = fs.readdirSync(path.join(rootPath, 'defs'));
+
+  for (const file of files) {
+    if (file.startsWith('.')) continue;
+    fs.unlinkSync(path.join(rootPath, 'defs', file));
+  }
+}

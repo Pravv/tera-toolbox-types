@@ -1,5 +1,4 @@
-import {Vec3, SkillId, Customize, PacketBase} from '../lib/Common';  
-
+import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common';  
 
 
 export class S_START_CHANGE_USER_APPEARANCE_3 extends PacketBase {
@@ -45,6 +44,6 @@ export class S_START_CHANGE_USER_APPEARANCE_3 extends PacketBase {
   weaponEnchantment: number
   unk25: number
   item: number
-  details: bytes
-  details2: bytes
+  details: number[]
+  details2: number[]
 }

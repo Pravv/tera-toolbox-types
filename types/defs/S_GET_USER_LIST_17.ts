@@ -1,5 +1,5 @@
 // # majorPatchVersion >= 86
-import {Vec3, SkillId, Customize, PacketBase} from '../lib/Common';  
+import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common';  
 
 
 export class S_GET_USER_LIST_17_characters_customStrings {
@@ -99,8 +99,8 @@ export class S_GET_USER_LIST_17_characters {
   awakeningLevel: number
   hasBrokerSales: boolean
   name: string
-  details: bytes
-  shape: bytes
+  details: number[]
+  shape: number[]
   guildName: string
   customStrings: S_GET_USER_LIST_17_characters_customStrings
 }

@@ -1,5 +1,5 @@
 // # majorPatchVersion >= 86
-import {Vec3, SkillId, Customize, PacketBase} from '../lib/Common';  
+import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common';  
 
 
 export class S_EACH_SKILL_RESULT_14_reaction_animSeq {

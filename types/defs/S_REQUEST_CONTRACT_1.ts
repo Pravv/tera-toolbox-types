@@ -1,5 +1,4 @@
-import {Vec3, SkillId, Customize, PacketBase} from '../lib/Common';  
-
+import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common';  
 
 
 export class S_REQUEST_CONTRACT_1 extends PacketBase {
@@ -11,5 +10,5 @@ export class S_REQUEST_CONTRACT_1 extends PacketBase {
   time: number
   senderName: string
   recipientName: string
-  data: bytes
+  data: number[]
 }

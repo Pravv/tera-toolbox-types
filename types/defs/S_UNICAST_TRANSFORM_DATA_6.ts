@@ -1,4 +1,4 @@
-import {Vec3, SkillId, Customize, PacketBase} from '../lib/Common';  
+import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common';  
 
 
 export class S_UNICAST_TRANSFORM_DATA_6_abnormals {
@@ -62,8 +62,8 @@ export class S_UNICAST_TRANSFORM_DATA_6 extends PacketBase {
   usedStyleHeadTransform: boolean
   icons: number[]
   abnormals: S_UNICAST_TRANSFORM_DATA_6_abnormals
-  details: bytes
-  shape: bytes
+  details: number[]
+  shape: number[]
   guildName: string
   guildLogo: string
   guildRank: string

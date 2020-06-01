@@ -1,6 +1,5 @@
 // # majorPatchVersion >= 86
-import {Vec3, SkillId, Customize, PacketBase} from '../lib/Common';  
-
+import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common';  
 
 
 export class S_PLAYER_CHANGE_EXP_2 extends PacketBase {

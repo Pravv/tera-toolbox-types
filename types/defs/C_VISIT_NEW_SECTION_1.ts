@@ -1,5 +1,4 @@
-import {Vec3, SkillId, Customize, PacketBase} from '../lib/Common';  
-
+import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common';  
 
 
 export class C_VISIT_NEW_SECTION_1 extends PacketBase {

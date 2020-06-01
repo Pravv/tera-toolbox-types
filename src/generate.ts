@@ -9,15 +9,12 @@ function stringToTsType(type) {
   if (['skillid', 'skillid32'].includes(type)) return 'SkillId';
   if (['vec3fa', 'vec3'].includes(type)) return 'Vec3';
   if (['customize'].includes(type)) return 'Customize';
+  if (['bytes'].includes(type)) return 'number[]';
   return type;
 }
 
 class Serializer {
   constructor(public packetName) {}
-
-  bytes(varName) {
-    return { field: `${varName}: number[]` };
-  }
 
   array(varName, subtype, fields) {
     if (subtype) return { field: `${varName}: ${stringToTsType(subtype)}[]` };

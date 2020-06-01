@@ -1,4 +1,4 @@
-import {Vec3, SkillId, Customize, PacketBase} from '../lib/Common';  
+import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common';  
 
 
 export class S_ASK_BIDDING_RARE_ITEM_1_unk8 {

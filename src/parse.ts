@@ -13,7 +13,6 @@ export function parseDefinition(rawDefinition: string[]) {
       return { definition: [], firstLineComment };
     }
   }
-  console.log(iter.position);
   const parsed = parse(rawDefinition.slice(iter.position), 0);
 
   // TODO: :)
