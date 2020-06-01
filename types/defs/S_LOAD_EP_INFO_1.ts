@@ -15,5 +15,5 @@ export class S_LOAD_EP_INFO_1 extends PacketBase {
   dailyExpMax: number
   prevLevel: number
   prevTotalPoints: number
-  perks: S_LOAD_EP_INFO_1_perks
+  perks: S_LOAD_EP_INFO_1_perks[]
 }

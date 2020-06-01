@@ -37,5 +37,5 @@ export class S_GUILD_MEMBER_LIST_1 extends PacketBase {
   unk: number
   guildName: string
   guildMaster: string
-  members: S_GUILD_MEMBER_LIST_1_members
+  members: S_GUILD_MEMBER_LIST_1_members[]
 }

@@ -9,5 +9,5 @@ export class S_LEARN_EP_PERK_1_perks {
 export class S_LEARN_EP_PERK_1 extends PacketBase {
   success: boolean
   usedPoints: number
-  perks: S_LEARN_EP_PERK_1_perks
+  perks: S_LEARN_EP_PERK_1_perks[]
 }

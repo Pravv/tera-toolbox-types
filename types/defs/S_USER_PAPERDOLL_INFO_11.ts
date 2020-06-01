@@ -48,7 +48,7 @@ export class S_USER_PAPERDOLL_INFO_11_items {
   hasEtching: boolean
   pcbang: boolean
   xp: bigint
-  passivitySets: S_USER_PAPERDOLL_INFO_11_items_passivitySets
+  passivitySets: S_USER_PAPERDOLL_INFO_11_items_passivitySets[]
   mergedPassivities: number[]
 }
 
@@ -159,13 +159,13 @@ export class S_USER_PAPERDOLL_INFO_11 extends PacketBase {
   /**
      see S_ITEMLIST
   */
-  items: S_USER_PAPERDOLL_INFO_11_items
+  items: S_USER_PAPERDOLL_INFO_11_items[]
 
   /**
      see S_DUNGEON_COOL_TIME_LIST
   */
-  dungeons: S_USER_PAPERDOLL_INFO_11_dungeons
-  equipmentOverrides: S_USER_PAPERDOLL_INFO_11_equipmentOverrides
+  dungeons: S_USER_PAPERDOLL_INFO_11_dungeons[]
+  equipmentOverrides: S_USER_PAPERDOLL_INFO_11_equipmentOverrides[]
   name: string
   status: string
   guild: string

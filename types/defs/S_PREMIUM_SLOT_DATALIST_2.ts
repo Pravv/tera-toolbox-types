@@ -15,7 +15,7 @@ export class S_PREMIUM_SLOT_DATALIST_2_sets_inventory {
 
 export class S_PREMIUM_SLOT_DATALIST_2_sets {
   id: number
-  inventory: S_PREMIUM_SLOT_DATALIST_2_sets_inventory
+  inventory: S_PREMIUM_SLOT_DATALIST_2_sets_inventory[]
 }
 
 export class S_PREMIUM_SLOT_DATALIST_2 extends PacketBase {
@@ -23,5 +23,5 @@ export class S_PREMIUM_SLOT_DATALIST_2 extends PacketBase {
   /**
      majorPatchVersion >= 82
   */
-  sets: S_PREMIUM_SLOT_DATALIST_2_sets
+  sets: S_PREMIUM_SLOT_DATALIST_2_sets[]
 }

@@ -11,5 +11,5 @@ export class S_SHOW_PARTY_MATCH_INFO_1_listings {
 export class S_SHOW_PARTY_MATCH_INFO_1 extends PacketBase {
   pageCurrent: number
   pageCount: number
-  listings: S_SHOW_PARTY_MATCH_INFO_1_listings
+  listings: S_SHOW_PARTY_MATCH_INFO_1_listings[]
 }

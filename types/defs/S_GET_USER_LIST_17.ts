@@ -102,7 +102,7 @@ export class S_GET_USER_LIST_17_characters {
   details: number[]
   shape: number[]
   guildName: string
-  customStrings: S_GET_USER_LIST_17_characters_customStrings
+  customStrings: S_GET_USER_LIST_17_characters_customStrings[]
 }
 
 export class S_GET_USER_LIST_17 extends PacketBase {
@@ -115,5 +115,5 @@ export class S_GET_USER_LIST_17 extends PacketBase {
   deletionSectionClassifyLevel: number
   deleteCharacterExpireHour1: number
   deleteCharacterExpireHour2: number
-  characters: S_GET_USER_LIST_17_characters
+  characters: S_GET_USER_LIST_17_characters[]
 }

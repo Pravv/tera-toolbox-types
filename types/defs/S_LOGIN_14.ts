@@ -88,5 +88,5 @@ export class S_LOGIN_14 extends PacketBase {
   /**
      see S_REQUEST_SERVANT_INFO_LIST
   */
-  servants: S_LOGIN_14_servants
+  servants: S_LOGIN_14_servants[]
 }

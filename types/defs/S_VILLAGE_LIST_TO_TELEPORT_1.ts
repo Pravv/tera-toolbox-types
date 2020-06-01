@@ -10,5 +10,5 @@ export class S_VILLAGE_LIST_TO_TELEPORT_1_locations {
 }
 
 export class S_VILLAGE_LIST_TO_TELEPORT_1 extends PacketBase {
-  locations: S_VILLAGE_LIST_TO_TELEPORT_1_locations
+  locations: S_VILLAGE_LIST_TO_TELEPORT_1_locations[]
 }

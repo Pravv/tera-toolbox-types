@@ -10,9 +10,9 @@ export class S_UPDATE_ACHIEVEMENT_PROGRESS_1_achievements_requirements {
 
 export class S_UPDATE_ACHIEVEMENT_PROGRESS_1_achievements {
   id: number
-  requirements: S_UPDATE_ACHIEVEMENT_PROGRESS_1_achievements_requirements
+  requirements: S_UPDATE_ACHIEVEMENT_PROGRESS_1_achievements_requirements[]
 }
 
 export class S_UPDATE_ACHIEVEMENT_PROGRESS_1 extends PacketBase {
-  achievements: S_UPDATE_ACHIEVEMENT_PROGRESS_1_achievements
+  achievements: S_UPDATE_ACHIEVEMENT_PROGRESS_1_achievements[]
 }

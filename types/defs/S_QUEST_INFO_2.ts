@@ -24,10 +24,10 @@ export class S_QUEST_INFO_2_quests {
   unk9: number
   unk10: number
   unk11: number
-  dialogs: S_QUEST_INFO_2_quests_dialogs
+  dialogs: S_QUEST_INFO_2_quests_dialogs[]
   tasks: number[]
 }
 
 export class S_QUEST_INFO_2 extends PacketBase {
-  quests: S_QUEST_INFO_2_quests
+  quests: S_QUEST_INFO_2_quests[]
 }

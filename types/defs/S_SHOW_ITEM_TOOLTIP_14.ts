@@ -114,7 +114,7 @@ export class S_SHOW_ITEM_TOOLTIP_14 extends PacketBase {
   damaged: boolean
   soulboundName: string
   crystals: number[]
-  passivitySets: S_SHOW_ITEM_TOOLTIP_14_passivitySets
-  statComparison: S_SHOW_ITEM_TOOLTIP_14_statComparison
+  passivitySets: S_SHOW_ITEM_TOOLTIP_14_passivitySets[]
+  statComparison: S_SHOW_ITEM_TOOLTIP_14_statComparison[]
   mergedPassivities: number[]
 }

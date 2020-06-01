@@ -26,5 +26,5 @@ export class S_TRADE_BROKER_HISTORY_ITEM_LIST_2_listings {
 export class S_TRADE_BROKER_HISTORY_ITEM_LIST_2 extends PacketBase {
   page: number
   pageCount: number
-  listings: S_TRADE_BROKER_HISTORY_ITEM_LIST_2_listings
+  listings: S_TRADE_BROKER_HISTORY_ITEM_LIST_2_listings[]
 }

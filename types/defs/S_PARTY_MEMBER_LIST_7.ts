@@ -31,5 +31,5 @@ export class S_PARTY_MEMBER_LIST_7 extends PacketBase {
   unk9: number
   unk10: number
   unk11: number
-  members: S_PARTY_MEMBER_LIST_7_members
+  members: S_PARTY_MEMBER_LIST_7_members[]
 }

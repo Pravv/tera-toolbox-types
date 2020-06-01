@@ -61,7 +61,7 @@ export class S_UNICAST_TRANSFORM_DATA_6 extends PacketBase {
   styleBackTranslationDebug: Vec3
   usedStyleHeadTransform: boolean
   icons: number[]
-  abnormals: S_UNICAST_TRANSFORM_DATA_6_abnormals
+  abnormals: S_UNICAST_TRANSFORM_DATA_6_abnormals[]
   details: number[]
   shape: number[]
   guildName: string

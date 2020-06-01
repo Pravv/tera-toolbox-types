@@ -13,6 +13,6 @@ export class C_START_INSTANCE_SKILL_7 extends PacketBase {
   loc: Vec3
   w: number
   continue: boolean
-  targets: C_START_INSTANCE_SKILL_7_targets
+  targets: C_START_INSTANCE_SKILL_7_targets[]
   endpoints: Vec3[]
 }

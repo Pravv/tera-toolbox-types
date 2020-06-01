@@ -15,5 +15,5 @@ export class S_ASK_BIDDING_RARE_ITEM_1 extends PacketBase {
   duration: number
   unk6: number
   remaining: number
-  unk8: S_ASK_BIDDING_RARE_ITEM_1_unk8
+  unk8: S_ASK_BIDDING_RARE_ITEM_1_unk8[]
 }

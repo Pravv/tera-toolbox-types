@@ -43,7 +43,7 @@ export class S_ITEMLIST_3_items {
   damaged: boolean
   customString: string
   crystals: number[]
-  passivitySets: S_ITEMLIST_3_items_passivitySets
+  passivitySets: S_ITEMLIST_3_items_passivitySets[]
   mergedPassivities: number[]
 }
 
@@ -60,5 +60,5 @@ export class S_ITEMLIST_3 extends PacketBase {
   first: boolean
   more: boolean
   lastInBatch: boolean
-  items: S_ITEMLIST_3_items
+  items: S_ITEMLIST_3_items[]
 }

@@ -32,6 +32,6 @@ export class S_REGISTER_EVOLUTION_ITEM_3 extends PacketBase {
   hideSuccessChance: boolean
   destroyOnFailureChance: number
   damageOnFailureChance: number
-  materials: S_REGISTER_EVOLUTION_ITEM_3_materials
-  successChances: S_REGISTER_EVOLUTION_ITEM_3_successChances
+  materials: S_REGISTER_EVOLUTION_ITEM_3_materials[]
+  successChances: S_REGISTER_EVOLUTION_ITEM_3_successChances[]
 }

@@ -13,6 +13,6 @@ export class S_RP_SKILL_POLISHING_LIST_1_levelEffects {
 }
 
 export class S_RP_SKILL_POLISHING_LIST_1 extends PacketBase {
-  optionEffects: S_RP_SKILL_POLISHING_LIST_1_optionEffects
-  levelEffects: S_RP_SKILL_POLISHING_LIST_1_levelEffects
+  optionEffects: S_RP_SKILL_POLISHING_LIST_1_optionEffects[]
+  levelEffects: S_RP_SKILL_POLISHING_LIST_1_levelEffects[]
 }

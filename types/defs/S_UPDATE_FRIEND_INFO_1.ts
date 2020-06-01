@@ -18,5 +18,5 @@ export class S_UPDATE_FRIEND_INFO_1_friends {
 }
 
 export class S_UPDATE_FRIEND_INFO_1 extends PacketBase {
-  friends: S_UPDATE_FRIEND_INFO_1_friends
+  friends: S_UPDATE_FRIEND_INFO_1_friends[]
 }

@@ -32,11 +32,11 @@ export class S_AVAILABLE_EVENT_MATCHING_LIST_2_quests {
   unk_b2: number
   unk_b3: number
   unk3: number
-  unkArray1: S_AVAILABLE_EVENT_MATCHING_LIST_2_quests_unkArray1
-  rewards: S_AVAILABLE_EVENT_MATCHING_LIST_2_quests_rewards
-  unkArray2: S_AVAILABLE_EVENT_MATCHING_LIST_2_quests_unkArray2
-  unkArray3: S_AVAILABLE_EVENT_MATCHING_LIST_2_quests_unkArray3
-  unkArray4: S_AVAILABLE_EVENT_MATCHING_LIST_2_quests_unkArray4
+  unkArray1: S_AVAILABLE_EVENT_MATCHING_LIST_2_quests_unkArray1[]
+  rewards: S_AVAILABLE_EVENT_MATCHING_LIST_2_quests_rewards[]
+  unkArray2: S_AVAILABLE_EVENT_MATCHING_LIST_2_quests_unkArray2[]
+  unkArray3: S_AVAILABLE_EVENT_MATCHING_LIST_2_quests_unkArray3[]
+  unkArray4: S_AVAILABLE_EVENT_MATCHING_LIST_2_quests_unkArray4[]
 }
 
 export class S_AVAILABLE_EVENT_MATCHING_LIST_2 extends PacketBase {
@@ -66,5 +66,5 @@ export class S_AVAILABLE_EVENT_MATCHING_LIST_2 extends PacketBase {
   limitDungeon: number
   limitSolo: number
   level: number
-  quests: S_AVAILABLE_EVENT_MATCHING_LIST_2_quests
+  quests: S_AVAILABLE_EVENT_MATCHING_LIST_2_quests[]
 }

@@ -17,6 +17,6 @@ export class S_PARTY_MEMBER_BUFF_UPDATE_2_conditions {
 export class S_PARTY_MEMBER_BUFF_UPDATE_2 extends PacketBase {
   serverId: number
   playerId: number
-  abnormals: S_PARTY_MEMBER_BUFF_UPDATE_2_abnormals
-  conditions: S_PARTY_MEMBER_BUFF_UPDATE_2_conditions
+  abnormals: S_PARTY_MEMBER_BUFF_UPDATE_2_abnormals[]
+  conditions: S_PARTY_MEMBER_BUFF_UPDATE_2_conditions[]
 }

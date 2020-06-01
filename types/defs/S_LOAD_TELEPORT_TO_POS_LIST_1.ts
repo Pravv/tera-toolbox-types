@@ -11,5 +11,5 @@ export class S_LOAD_TELEPORT_TO_POS_LIST_1_locations {
 }
 
 export class S_LOAD_TELEPORT_TO_POS_LIST_1 extends PacketBase {
-  locations: S_LOAD_TELEPORT_TO_POS_LIST_1_locations
+  locations: S_LOAD_TELEPORT_TO_POS_LIST_1_locations[]
 }

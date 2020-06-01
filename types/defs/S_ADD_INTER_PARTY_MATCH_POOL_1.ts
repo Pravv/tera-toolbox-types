@@ -14,6 +14,6 @@ export class S_ADD_INTER_PARTY_MATCH_POOL_1_players {
 export class S_ADD_INTER_PARTY_MATCH_POOL_1 extends PacketBase {
   avgWaitSec: number
   type: number
-  instances: S_ADD_INTER_PARTY_MATCH_POOL_1_instances
-  players: S_ADD_INTER_PARTY_MATCH_POOL_1_players
+  instances: S_ADD_INTER_PARTY_MATCH_POOL_1_instances[]
+  players: S_ADD_INTER_PARTY_MATCH_POOL_1_players[]
 }

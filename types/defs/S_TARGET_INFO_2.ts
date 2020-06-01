@@ -25,6 +25,6 @@ export class S_TARGET_INFO_2 extends PacketBase {
   edgePercentage: number
   edgeTimeRemaining: number
   edgeMin: number
-  abnormals: S_TARGET_INFO_2_abnormals
-  conditions: S_TARGET_INFO_2_conditions
+  abnormals: S_TARGET_INFO_2_abnormals[]
+  conditions: S_TARGET_INFO_2_conditions[]
 }

@@ -10,5 +10,5 @@ export class S_SPAWN_BONFIRE_2 extends PacketBase {
   id: number
   loc: Vec3
   status: number
-  unk: S_SPAWN_BONFIRE_2_unk
+  unk: S_SPAWN_BONFIRE_2_unk[]
 }

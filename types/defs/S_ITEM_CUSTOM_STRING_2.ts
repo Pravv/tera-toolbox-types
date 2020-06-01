@@ -7,5 +7,5 @@ export class S_ITEM_CUSTOM_STRING_2_customStrings {
 
 export class S_ITEM_CUSTOM_STRING_2 extends PacketBase {
   gameId: bigint
-  customStrings: S_ITEM_CUSTOM_STRING_2_customStrings
+  customStrings: S_ITEM_CUSTOM_STRING_2_customStrings[]
 }

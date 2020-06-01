@@ -10,5 +10,5 @@ export class S_PREVIEW_ITEM_1_items {
 }
 
 export class S_PREVIEW_ITEM_1 extends PacketBase {
-  items: S_PREVIEW_ITEM_1_items
+  items: S_PREVIEW_ITEM_1_items[]
 }

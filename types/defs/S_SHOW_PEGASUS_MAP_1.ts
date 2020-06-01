@@ -10,5 +10,5 @@ export class S_SHOW_PEGASUS_MAP_1_routes {
 }
 
 export class S_SHOW_PEGASUS_MAP_1 extends PacketBase {
-  routes: S_SHOW_PEGASUS_MAP_1_routes
+  routes: S_SHOW_PEGASUS_MAP_1_routes[]
 }

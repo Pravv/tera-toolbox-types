@@ -14,5 +14,5 @@ export class S_GMEVENT_RECV_REWARD_2 extends PacketBase {
   exp: number
   talentExp: number
   unk1: number
-  items: S_GMEVENT_RECV_REWARD_2_items
+  items: S_GMEVENT_RECV_REWARD_2_items[]
 }

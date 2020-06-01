@@ -16,6 +16,6 @@ export class S_REQUEST_PRIVATE_CHANNEL_INFO_2_friends {
 export class S_REQUEST_PRIVATE_CHANNEL_INFO_2 extends PacketBase {
   owner: boolean
   password: number
-  members: S_REQUEST_PRIVATE_CHANNEL_INFO_2_members
-  friends: S_REQUEST_PRIVATE_CHANNEL_INFO_2_friends
+  members: S_REQUEST_PRIVATE_CHANNEL_INFO_2_members[]
+  friends: S_REQUEST_PRIVATE_CHANNEL_INFO_2_friends[]
 }

@@ -19,14 +19,14 @@ class Serializer {
   array(varName, subtype, fields) {
     if (subtype) return { field: `${varName}: ${stringToTsType(subtype)}[]` };
 
-    return this.object(varName, subtype, fields);
+    return this.object(varName, subtype, fields, true);
   }
 
-  object(varName, subtype, fields) {
+  object(varName, subtype, fields, isArray = false) {
     const subclassName = `${this.packetName}_${varName}`;
     const { subClasses } = generate(subclassName, fields, false);
 
-    return { field: `${varName}: ${subclassName}`, subClass: subClasses };
+    return { field: `${varName}: ${subclassName}${isArray ? '[]' : ''}`, subClass: subClasses };
   }
 }
 

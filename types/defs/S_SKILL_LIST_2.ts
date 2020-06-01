@@ -12,5 +12,5 @@ export class S_SKILL_LIST_2 extends PacketBase {
   /**
      majorPatchVersion >= 74
   */
-  skills: S_SKILL_LIST_2_skills
+  skills: S_SKILL_LIST_2_skills[]
 }

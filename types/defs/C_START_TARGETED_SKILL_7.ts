@@ -12,5 +12,5 @@ export class C_START_TARGETED_SKILL_7 extends PacketBase {
   loc: Vec3
   w: number
   dest: Vec3
-  targets: C_START_TARGETED_SKILL_7_targets
+  targets: C_START_TARGETED_SKILL_7_targets[]
 }

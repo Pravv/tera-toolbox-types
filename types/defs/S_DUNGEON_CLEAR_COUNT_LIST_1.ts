@@ -9,5 +9,5 @@ export class S_DUNGEON_CLEAR_COUNT_LIST_1_dungeons {
 
 export class S_DUNGEON_CLEAR_COUNT_LIST_1 extends PacketBase {
   pid: number
-  dungeons: S_DUNGEON_CLEAR_COUNT_LIST_1_dungeons
+  dungeons: S_DUNGEON_CLEAR_COUNT_LIST_1_dungeons[]
 }

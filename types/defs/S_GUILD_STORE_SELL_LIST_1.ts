@@ -8,7 +8,7 @@ export class S_GUILD_STORE_SELL_LIST_1_tabs_items {
 
 export class S_GUILD_STORE_SELL_LIST_1_tabs {
   caption: number
-  items: S_GUILD_STORE_SELL_LIST_1_tabs_items
+  items: S_GUILD_STORE_SELL_LIST_1_tabs_items[]
 }
 
 export class S_GUILD_STORE_SELL_LIST_1 extends PacketBase {
@@ -16,5 +16,5 @@ export class S_GUILD_STORE_SELL_LIST_1 extends PacketBase {
   contract: number
   button: number
   funds: bigint
-  tabs: S_GUILD_STORE_SELL_LIST_1_tabs
+  tabs: S_GUILD_STORE_SELL_LIST_1_tabs[]
 }

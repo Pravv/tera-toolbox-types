@@ -9,7 +9,7 @@ export class S_BATTLE_FIELD_POINT_STORE_SELL_LIST_1_tabs_items {
 
 export class S_BATTLE_FIELD_POINT_STORE_SELL_LIST_1_tabs {
   caption: number
-  items: S_BATTLE_FIELD_POINT_STORE_SELL_LIST_1_tabs_items
+  items: S_BATTLE_FIELD_POINT_STORE_SELL_LIST_1_tabs_items[]
 }
 
 export class S_BATTLE_FIELD_POINT_STORE_SELL_LIST_1 extends PacketBase {
@@ -19,5 +19,5 @@ export class S_BATTLE_FIELD_POINT_STORE_SELL_LIST_1 extends PacketBase {
   tokens: number
   rank: number
   faction: number
-  tabs: S_BATTLE_FIELD_POINT_STORE_SELL_LIST_1_tabs
+  tabs: S_BATTLE_FIELD_POINT_STORE_SELL_LIST_1_tabs[]
 }

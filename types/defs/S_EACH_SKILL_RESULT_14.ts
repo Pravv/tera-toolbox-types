@@ -19,7 +19,7 @@ export class S_EACH_SKILL_RESULT_14_reaction {
   skill: SkillId
   stage: number
   id: number
-  animSeq: S_EACH_SKILL_RESULT_14_reaction_animSeq
+  animSeq: S_EACH_SKILL_RESULT_14_reaction_animSeq[]
 }
 
 export class S_EACH_SKILL_RESULT_14 extends PacketBase {

@@ -8,5 +8,5 @@ export class S_CREST_INFO_2_crests {
 export class S_CREST_INFO_2 extends PacketBase {
   points: number
   pointsActive: number
-  crests: S_CREST_INFO_2_crests
+  crests: S_CREST_INFO_2_crests[]
 }

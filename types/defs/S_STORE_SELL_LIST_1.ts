@@ -7,12 +7,12 @@ export class S_STORE_SELL_LIST_1_tabs_items {
 
 export class S_STORE_SELL_LIST_1_tabs {
   caption: number
-  items: S_STORE_SELL_LIST_1_tabs_items
+  items: S_STORE_SELL_LIST_1_tabs_items[]
 }
 
 export class S_STORE_SELL_LIST_1 extends PacketBase {
   cid: bigint
   contract: number
   button: number
-  tabs: S_STORE_SELL_LIST_1_tabs
+  tabs: S_STORE_SELL_LIST_1_tabs[]
 }

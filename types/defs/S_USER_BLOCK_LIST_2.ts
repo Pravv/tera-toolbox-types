@@ -10,5 +10,5 @@ export class S_USER_BLOCK_LIST_2_blockList {
 }
 
 export class S_USER_BLOCK_LIST_2 extends PacketBase {
-  blockList: S_USER_BLOCK_LIST_2_blockList
+  blockList: S_USER_BLOCK_LIST_2_blockList[]
 }

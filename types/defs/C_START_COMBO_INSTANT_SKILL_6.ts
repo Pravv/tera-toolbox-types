@@ -12,6 +12,6 @@ export class C_START_COMBO_INSTANT_SKILL_6 extends PacketBase {
   skill: SkillId
   loc: Vec3
   w: number
-  targets: C_START_COMBO_INSTANT_SKILL_6_targets
+  targets: C_START_COMBO_INSTANT_SKILL_6_targets[]
   endpoints: Vec3[]
 }

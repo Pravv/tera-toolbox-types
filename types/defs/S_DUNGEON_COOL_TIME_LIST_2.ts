@@ -20,6 +20,6 @@ export class S_DUNGEON_COOL_TIME_LIST_2 extends PacketBase {
   /**
      majorPatchVersion >= 80
   */
-  dungeons: S_DUNGEON_COOL_TIME_LIST_2_dungeons
-  battlegrounds: S_DUNGEON_COOL_TIME_LIST_2_battlegrounds
+  dungeons: S_DUNGEON_COOL_TIME_LIST_2_dungeons[]
+  battlegrounds: S_DUNGEON_COOL_TIME_LIST_2_battlegrounds[]
 }

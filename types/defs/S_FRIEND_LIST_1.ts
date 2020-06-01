@@ -22,5 +22,5 @@ export class S_FRIEND_LIST_1_friends {
 
 export class S_FRIEND_LIST_1 extends PacketBase {
   personalNote: string
-  friends: S_FRIEND_LIST_1_friends
+  friends: S_FRIEND_LIST_1_friends[]
 }

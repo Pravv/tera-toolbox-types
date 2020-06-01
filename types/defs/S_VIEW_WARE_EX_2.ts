@@ -38,5 +38,5 @@ export class S_VIEW_WARE_EX_2 extends PacketBase {
   /**
      For details, see S_ITEMLIST
   */
-  items: S_VIEW_WARE_EX_2_items
+  items: S_VIEW_WARE_EX_2_items[]
 }

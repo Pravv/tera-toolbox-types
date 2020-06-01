@@ -22,5 +22,5 @@ export class S_ACTION_STAGE_9 extends PacketBase {
   moving: boolean
   dest: Vec3
   target: bigint
-  animSeq: S_ACTION_STAGE_9_animSeq
+  animSeq: S_ACTION_STAGE_9_animSeq[]
 }

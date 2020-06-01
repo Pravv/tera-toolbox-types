@@ -8,5 +8,5 @@ export class S_CHANGE_EVENT_MATCHING_STATE_2_matchingEvents {
 export class S_CHANGE_EVENT_MATCHING_STATE_2 extends PacketBase {
   searching: boolean
   dungeon: boolean
-  matchingEvents: S_CHANGE_EVENT_MATCHING_STATE_2_matchingEvents
+  matchingEvents: S_CHANGE_EVENT_MATCHING_STATE_2_matchingEvents[]
 }

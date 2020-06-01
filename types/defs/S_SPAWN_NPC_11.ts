@@ -57,7 +57,7 @@ export class S_SPAWN_NPC_11 extends PacketBase {
   /**
      Info seats of vehicle NPCs
   */
-  seats: S_SPAWN_NPC_11_seats
-  parts: S_SPAWN_NPC_11_parts
+  seats: S_SPAWN_NPC_11_seats[]
+  parts: S_SPAWN_NPC_11_parts[]
   npcName: string
 }

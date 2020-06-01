@@ -27,6 +27,6 @@ export class S_REQUEST_SPAWN_SERVANT_4 extends PacketBase {
   styleItem: number
   restyleId: number
   giftedSkills: number[]
-  abilities: S_REQUEST_SPAWN_SERVANT_4_abilities
+  abilities: S_REQUEST_SPAWN_SERVANT_4_abilities[]
   name: string
 }

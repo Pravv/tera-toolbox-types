@@ -8,5 +8,5 @@ export class S_REQUEST_CITY_WAR_MAP_INFO_DETAIL_1_guilds {
 }
 
 export class S_REQUEST_CITY_WAR_MAP_INFO_DETAIL_1 extends PacketBase {
-  guilds: S_REQUEST_CITY_WAR_MAP_INFO_DETAIL_1_guilds
+  guilds: S_REQUEST_CITY_WAR_MAP_INFO_DETAIL_1_guilds[]
 }

@@ -21,5 +21,5 @@ export class S_GACHA_END_2 extends PacketBase {
   */
   randomReward: S_GACHA_END_2_randomReward
   unkn: bigint
-  fixedRewards: S_GACHA_END_2_fixedRewards
+  fixedRewards: S_GACHA_END_2_fixedRewards[]
 }

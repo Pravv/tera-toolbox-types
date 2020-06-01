@@ -10,5 +10,5 @@ export class S_ABNORMALITY_TOOLTIP_VALUE_1_values {
 export class S_ABNORMALITY_TOOLTIP_VALUE_1 extends PacketBase {
   gameId: bigint
   id: number
-  values: S_ABNORMALITY_TOOLTIP_VALUE_1_values
+  values: S_ABNORMALITY_TOOLTIP_VALUE_1_values[]
 }

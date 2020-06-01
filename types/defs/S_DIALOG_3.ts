@@ -37,8 +37,8 @@ export class S_DIALOG_3_questRewards {
   policyPoints: number
   faction: S_DIALOG_3_questRewards_faction
   skillAdvancementExp: number
-  items: S_DIALOG_3_questRewards_items
-  skills: S_DIALOG_3_questRewards_skills
+  items: S_DIALOG_3_questRewards_items[]
+  skills: S_DIALOG_3_questRewards_skills[]
 }
 
 export class S_DIALOG_3 extends PacketBase {
@@ -57,6 +57,6 @@ export class S_DIALOG_3 extends PacketBase {
   repeatableQuestTask: boolean
   maxRepeatCount: number
   additionalRewardEvent: boolean
-  buttons: S_DIALOG_3_buttons
-  questRewards: S_DIALOG_3_questRewards
+  buttons: S_DIALOG_3_buttons[]
+  questRewards: S_DIALOG_3_questRewards[]
 }

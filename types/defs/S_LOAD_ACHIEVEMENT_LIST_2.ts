@@ -18,6 +18,6 @@ export class S_LOAD_ACHIEVEMENT_LIST_2 extends PacketBase {
   accomplished: number
   laurelPoints: number
   title: number
-  achievements: S_LOAD_ACHIEVEMENT_LIST_2_achievements
-  history: S_LOAD_ACHIEVEMENT_LIST_2_history
+  achievements: S_LOAD_ACHIEVEMENT_LIST_2_achievements[]
+  history: S_LOAD_ACHIEVEMENT_LIST_2_history[]
 }

@@ -13,5 +13,5 @@ export class S_REQUEST_CITY_WAR_MAP_INFO_1 extends PacketBase {
   unk: number
   unk2: number
   timeRemaining: number
-  guilds: S_REQUEST_CITY_WAR_MAP_INFO_1_guilds
+  guilds: S_REQUEST_CITY_WAR_MAP_INFO_1_guilds[]
 }

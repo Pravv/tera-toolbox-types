@@ -28,11 +28,11 @@ export class S_REQUEST_SERVANT_INFO_LIST_3_servants {
   unk2: number
   restyleId: number
   name: string
-  giftedSkills: S_REQUEST_SERVANT_INFO_LIST_3_servants_giftedSkills
-  abilities: S_REQUEST_SERVANT_INFO_LIST_3_servants_abilities
+  giftedSkills: S_REQUEST_SERVANT_INFO_LIST_3_servants_giftedSkills[]
+  abilities: S_REQUEST_SERVANT_INFO_LIST_3_servants_abilities[]
 }
 
 export class S_REQUEST_SERVANT_INFO_LIST_3 extends PacketBase {
   slots: number
-  servants: S_REQUEST_SERVANT_INFO_LIST_3_servants
+  servants: S_REQUEST_SERVANT_INFO_LIST_3_servants[]
 }

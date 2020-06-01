@@ -16,5 +16,5 @@ export class S_TELEPORT_TO_CAMP_1 extends PacketBase {
   z: number
   unk1: number
   unk2: boolean
-  destinations: S_TELEPORT_TO_CAMP_1_destinations
+  destinations: S_TELEPORT_TO_CAMP_1_destinations[]
 }

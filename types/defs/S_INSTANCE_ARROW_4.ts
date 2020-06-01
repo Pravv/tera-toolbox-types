@@ -12,6 +12,6 @@ export class S_INSTANCE_ARROW_4 extends PacketBase {
   templateId: number
   skill: SkillId
   actionId: number
-  targets: S_INSTANCE_ARROW_4_targets
+  targets: S_INSTANCE_ARROW_4_targets[]
   endpoints: Vec3[]
 }

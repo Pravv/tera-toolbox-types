@@ -7,5 +7,5 @@ export class C_CHECK_VERSION_1_version {
 }
 
 export class C_CHECK_VERSION_1 extends PacketBase {
-  version: C_CHECK_VERSION_1_version
+  version: C_CHECK_VERSION_1_version[]
 }

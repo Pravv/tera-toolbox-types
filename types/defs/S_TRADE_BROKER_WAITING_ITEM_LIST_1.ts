@@ -30,5 +30,5 @@ export class S_TRADE_BROKER_WAITING_ITEM_LIST_1_listings {
 export class S_TRADE_BROKER_WAITING_ITEM_LIST_1 extends PacketBase {
   page: number
   pageCount: number
-  listings: S_TRADE_BROKER_WAITING_ITEM_LIST_1_listings
+  listings: S_TRADE_BROKER_WAITING_ITEM_LIST_1_listings[]
 }

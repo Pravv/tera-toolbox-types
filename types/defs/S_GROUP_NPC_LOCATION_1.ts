@@ -11,5 +11,5 @@ export class S_GROUP_NPC_LOCATION_1_npcs {
 
 export class S_GROUP_NPC_LOCATION_1 extends PacketBase {
   type: number
-  npcs: S_GROUP_NPC_LOCATION_1_npcs
+  npcs: S_GROUP_NPC_LOCATION_1_npcs[]
 }

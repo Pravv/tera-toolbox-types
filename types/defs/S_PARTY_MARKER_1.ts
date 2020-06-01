@@ -7,5 +7,5 @@ export class S_PARTY_MARKER_1_markers {
 }
 
 export class S_PARTY_MARKER_1 extends PacketBase {
-  markers: S_PARTY_MARKER_1_markers
+  markers: S_PARTY_MARKER_1_markers[]
 }
