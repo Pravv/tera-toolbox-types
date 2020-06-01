@@ -1,4 +1,4 @@
-import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common';  
+import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common'
 
 
 export class S_REPLY_NONDB_ITEM_INFO_1 extends PacketBase {

@@ -1,5 +1,5 @@
 // # majorPatchVersion >= 75
-import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common';  
+import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common'
 
 
 export class S_START_USER_PROJECTILE_9 extends PacketBase {

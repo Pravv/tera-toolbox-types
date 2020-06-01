@@ -1,5 +1,5 @@
 // ﻿# majorPatchVersion >= 88
-import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common';  
+import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common'
 
 
 export class S_REQUEST_SERVANT_INFO_LIST_3_servants_giftedSkills {

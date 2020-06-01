@@ -1,4 +1,4 @@
-import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common';  
+import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common'
 
 
 export class S_USER_WEAPON_APPEARANCE_CHANGE_2 extends PacketBase {

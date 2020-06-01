@@ -1,4 +1,4 @@
-import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common';  
+import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common'
 
 
 export class S_LOAD_TELEPORT_TO_POS_LIST_1_locations {

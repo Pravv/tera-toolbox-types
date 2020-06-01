@@ -1,5 +1,5 @@
 // # majorPatchVersion >= 80
-import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common';  
+import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common'
 
 
 export class S_DUNGEON_COOL_TIME_LIST_2_dungeons {

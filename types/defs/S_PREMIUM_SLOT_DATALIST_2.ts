@@ -1,5 +1,5 @@
 // # majorPatchVersion >= 82
-import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common';  
+import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common'
 
 
 export class S_PREMIUM_SLOT_DATALIST_2_sets_inventory {
