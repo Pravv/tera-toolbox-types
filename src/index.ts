@@ -4,7 +4,7 @@ import { keyBy, sortBy } from 'lodash';
 import fetch from 'node-fetch';
 import { generatePacketClass } from './generate';
 import { parseDefinition } from './parse';
-import { generateModFile, generatePacketImport } from './templates';
+import { generateHookDeclaration, generateModFile, generatePacketImport } from './templates';
 import * as path from 'path';
 
 async function getDefs() {
@@ -36,9 +36,9 @@ function generateFiles(decodedDefs: { name: string; version: number; def: string
     const parsedDef = parseDefinition(def);
 
     const type = generatePacketClass(`${name}_${version}`, parsedDef.definition, parsedDef.firstLineComment);
-    const hookDefinition = `  hook(packet: '${name}_${version}', version: ${version} | '*', options?: HookOptions, cb?: CallbackFunction<${name}_${version}>);`;
+    const hook = generateHookDeclaration(name, version);
     types.push({ type, name: `${name}_${version}` });
-    hooks.push(hookDefinition);
+    hooks.push(hook);
     imports.push(generatePacketImport(name, version));
   }
 
