@@ -1,7 +1,3 @@
-import { Mod } from './lib/Mod';
+import { CallbackFunction, HookOptions, Mod } from './lib/Mod';
 
 export = Mod;
-
-function superMod(mod: Mod) {
-
-}

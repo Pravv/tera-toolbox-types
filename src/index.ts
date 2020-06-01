@@ -4,7 +4,7 @@ import { keyBy, sortBy } from 'lodash';
 import fetch from 'node-fetch';
 import { generatePacketClass } from './generate';
 import { parseDefinition } from './parse';
-import { generateHookDeclaration, generateModFile, generatePacketImport } from './templates';
+import { generateDefIndexFile, generateHookDeclaration, generateModFile, generatePacketImport } from './templates';
 import * as path from 'path';
 
 async function getDefs() {
@@ -44,7 +44,8 @@ function generateFiles(decodedDefs: { name: string; version: number; def: string
     const hook = generateHookDeclaration(name, version);
     types.push({ type, name: `${name}_${version}` });
     hooks.push(hook);
-    imports.push(generatePacketImport(name, version));
+    //imports.push(generatePacketImport(name, version));
+    imports.push(`${name}_${version}`);
   }
 
   return { types, hooks, imports };
@@ -62,8 +63,8 @@ async function main() {
     fs.writeFileSync(path.join(rootPath, 'defs', `${type.name}.ts`), type.type);
   }
 
-  const hook = generateModFile(imports, hooks);
-  fs.writeFileSync(path.join(rootPath, 'lib', `Mod.ts`), hook);
+  fs.writeFileSync(path.join(rootPath, 'defs', `index.ts`), generateDefIndexFile(imports));
+  fs.writeFileSync(path.join(rootPath, 'lib', `Mod.ts`), generateModFile(imports, hooks));
 }
 
 main().catch(e => console.log(e));

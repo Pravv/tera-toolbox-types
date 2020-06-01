@@ -20,13 +20,14 @@ ${classProperties.join('\n')}
 
 export function generateModFile(imports: string[], hooks: string[]) {
   return `\
-${imports.join('\n')}
+import { ${imports.join(', ')} } from '../defs'
 
-type CallbackFunction<PacketT> = (event: PacketT, fake?: boolean) => boolean | void;
+export type CallbackFunction<PacketT> = (event: PacketT, fake?: boolean) => boolean | void;
 export interface HookOptions { order?: number, filter?: { fake?: boolean, incoming?: boolean, modified?: boolean, silenced?: boolean } }
+export type Hook<EventT, PacketT> = (packet: EventT, version: number | '*', options?: HookOptions | CallbackFunction<PacketT>, cb?: CallbackFunction<PacketT>) => boolean;
 
 export interface Mod {
-hook(packet: '*', version: 'raw', options?: HookOptions, cb?: (event: any, fake?: boolean) => boolean | void);
+  hook(packet: '*', version: 'raw', options?: HookOptions, cb?: (event: any, fake?: boolean) => boolean | void);
 ${hooks.join('\n')}
 }
 `.trimStart();
@@ -37,5 +38,15 @@ export function generatePacketImport(name: string, version: number) {
 }
 
 export function generateHookDeclaration(name: string, version: number) {
-  return `  hook(packet: '${name}', version: ${version} | '*', options?: HookOptions | CallbackFunction<${name}_${version}>, cb?: CallbackFunction<${name}_${version}>);`;
+  // return `  hook(): Hook<'${name}', ${name}_${version}>;`;
+  return `  hook(packet: '${name}', version: number | '*', options?: HookOptions | CallbackFunction<${name}_${version}>, cb?: CallbackFunction<${name}_${version}>)`;
 }
+
+export function generateDefIndexFile(defs) {
+  return `\
+  ${defs.map((name) => ` export { ${name} } from './${name}';`).join('  \n')}
+`;
+}
+
+
+export { S_GET_USER_LIST_17 } from '../types/defs/S_GET_USER_LIST_17';
