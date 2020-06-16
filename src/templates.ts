@@ -48,5 +48,3 @@ export function generateDefIndexFile(defs) {
   ${defs.map((name) => ` export { ${name} } from './${name}';`).join('  \n')}
 `;
 }
-
-export { S_GET_USER_LIST_17 } from '../types/defs/S_GET_USER_LIST_17';

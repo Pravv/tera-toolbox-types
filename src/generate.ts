@@ -43,6 +43,8 @@ export function generate(packetName, definition, topLevel = false) {
   const classProperties = [];
 
   for (const { name, type, fields, subtype, comment } of definition) {
+    if (comment !== '' && !comment.includes('majorPatchVersion')) classProperties.push(`${classProperties.length === 0 ? '' : '\n'}  /**\n   ${comment}\n  */`);
+
     if (!NESTED_TYPES.includes(type)) {
       classProperties.push(`  ${name}: ${stringToTsType(type)}`);
       continue;
@@ -52,7 +54,6 @@ export function generate(packetName, definition, topLevel = false) {
 
     if (serialized.subClass) subClasses.push(...serialized.subClass);
 
-    if (comment !== '') classProperties.push(`\n  /**\n   ${comment}\n  */`);
     classProperties.push(`  ${serialized.field}`);
   }
 
