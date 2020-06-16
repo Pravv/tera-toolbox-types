@@ -24,16 +24,40 @@ export class S_EACH_SKILL_RESULT_14_reaction {
 
 export class S_EACH_SKILL_RESULT_14 extends PacketBase {
   source: bigint
+
+  /**
+     If non-zero, then source is a projectile and this is its owner
+  */
   owner: bigint
   target: bigint
   templateId: number
   skill: SkillId
+
+  /**
+     index in TargetingList (NOT id) - See DataCenter.SkillData
+  */
   targeting: number
+
+  /**
+     index in AreaList
+  */
   area: number
   id: number
+
+  /**
+     time in Targeting
+  */
   time: number
   value: bigint
+
+  /**
+     0 = Hidden, 1 = Damage, 2 = Heal, 3 = MP
+  */
   type: number
+
+  /**
+     See DataCenter.NocTanEffectData
+  */
   noctEffect: number
   crit: boolean
   stackExplode: boolean
@@ -45,5 +69,9 @@ export class S_EACH_SKILL_RESULT_14 extends PacketBase {
      Used for knockdown, stagger etc.
   */
   reaction: S_EACH_SKILL_RESULT_14_reaction
+
+  /**
+     0 = default, 1 = physical, 2 = magical
+  */
   damageType: number
 }

@@ -8,5 +8,9 @@ export class S_ACTION_END_5 extends PacketBase {
   w: number
   templateId: number
   skill: SkillId
+
+  /**
+     0 = Finished
+  */
   type: number
 }

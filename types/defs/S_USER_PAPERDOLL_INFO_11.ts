@@ -154,6 +154,10 @@ export class S_USER_PAPERDOLL_INFO_11 extends PacketBase {
   styleFootprint: number
   flightDataId: number
   flightSpeedMultiplier: number
+
+  /**
+     echo'd from C packets
+  */
   zoom: boolean
 
   /**

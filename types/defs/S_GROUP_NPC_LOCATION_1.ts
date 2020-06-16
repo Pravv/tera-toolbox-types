@@ -10,6 +10,9 @@ export class S_GROUP_NPC_LOCATION_1_npcs {
 }
 
 export class S_GROUP_NPC_LOCATION_1 extends PacketBase {
+  /**
+     see C_PLAYER_LOCATION.type
+  */
   type: number
   npcs: S_GROUP_NPC_LOCATION_1_npcs[]
 }

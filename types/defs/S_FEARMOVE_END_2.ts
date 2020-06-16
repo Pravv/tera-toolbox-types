@@ -7,6 +7,14 @@ export class S_FEARMOVE_END_2 extends PacketBase {
   loc: Vec3
   w: number
   speed: number
+
+  /**
+     see S_ACTION_END.type
+  */
   reason: number
+
+  /**
+     see C_PLAYER_LOCATION.type
+  */
   type: number
 }

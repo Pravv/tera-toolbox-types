@@ -12,9 +12,17 @@ export class S_LOGIN_14_servants {
 
 export class S_LOGIN_14 extends PacketBase {
   templateId: number
+
+  /**
+     globally-unique identifier for this session
+  */
   gameId: bigint
   serverId: number
   playerId: number
+
+  /**
+     ?
+  */
   actionMode: number
   alive: boolean
   status: number
@@ -52,11 +60,19 @@ export class S_LOGIN_14 extends PacketBase {
   serverTime: bigint
   isPkServer: boolean
   chatBanEndTime: bigint
+
+  /**
+     achievement id
+  */
   title: number
   weaponModel: number
   bodyModel: number
   handModel: number
   feetModel: number
+
+  /**
+     ignored
+  */
   weaponDye: number
   bodyDye: number
   handDye: number
@@ -78,6 +94,10 @@ export class S_LOGIN_14 extends PacketBase {
   styleBodyDye: number
   showStyle: boolean
   titleCount: bigint
+
+  /**
+     unknown, but client ignores shape if this is invalid
+  */
   appearance2: number
   scale: number
   guildLogoId: number

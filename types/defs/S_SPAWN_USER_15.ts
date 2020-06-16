@@ -24,8 +24,16 @@ export class S_SPAWN_USER_15 extends PacketBase {
   underwear: number
   head: number
   face: number
+
+  /**
+     0 = Enter area, 1 = None
+  */
   spawnFx: number
   mount: number
+
+  /**
+     See C_PLAYER_LOCATION.type / C_PLAYER_FLYING_LOCATION.type
+  */
   pose: number
   title: number
   shuttleId: bigint
@@ -37,6 +45,10 @@ export class S_SPAWN_USER_15 extends PacketBase {
   bodyModel: number
   handModel: number
   feetModel: number
+
+  /**
+     ignored
+  */
   weaponDye: number
   bodyDye: number
   handDye: number

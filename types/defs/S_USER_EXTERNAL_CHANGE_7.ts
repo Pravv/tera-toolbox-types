@@ -14,6 +14,10 @@ export class S_USER_EXTERNAL_CHANGE_7 extends PacketBase {
   bodyModel: number
   handModel: number
   feetModel: number
+
+  /**
+     ignored
+  */
   weaponDye: number
   bodyDye: number
   handDye: number

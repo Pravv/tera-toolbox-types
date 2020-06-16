@@ -8,5 +8,9 @@ export class S_FEARMOVE_STAGE_2 extends PacketBase {
   w: number
   speed: number
   dest: Vec3
+
+  /**
+     see C_PLAYER_LOCATION.type
+  */
   type: number
 }

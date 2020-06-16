@@ -12,6 +12,9 @@ export class S_SHOW_ITEM_TOOLTIP_14_passivitySets {
 }
 
 export class S_SHOW_ITEM_TOOLTIP_14_statComparison {
+  /**
+     corresponds with passivity set
+  */
   index: number
   stat1: number
   stat2: number
@@ -36,6 +39,10 @@ export class S_SHOW_ITEM_TOOLTIP_14_statComparison {
   unk6: number
   unk7: number
   unk8: number
+
+  /**
+     0xfefefefe starting from here
+  */
   unk9: number
   unk10: number
   unk11: number
@@ -58,8 +65,16 @@ export class S_SHOW_ITEM_TOOLTIP_14 extends PacketBase {
   type: number
   dbid: bigint
   id: number
+
+  /**
+     always same as dbid?
+  */
   dbid2: bigint
   ownerId: bigint
+
+  /**
+     0: inventory/pocket, 1: bank, 2: mail, 3: guild bank, 4: homunculus shop, 5: homunculus shop buy, 6: trade broker sale, 7: group duel betting pool, 9: pet bank, 12: wardrobe, 14: equipment
+  */
   container: number
   pocket: number
   slot: number
@@ -76,6 +91,10 @@ export class S_SHOW_ITEM_TOOLTIP_14 extends PacketBase {
   etching2: number
   etching3: number
   etching4: number
+
+  /**
+     etchings 5-8 are red in standard tooltips (new etching tooltip displays them as green)
+  */
   etching5: number
   etching6: number
   etching7: number
@@ -90,24 +109,60 @@ export class S_SHOW_ITEM_TOOLTIP_14 extends PacketBase {
   etchingSecRemaining8: bigint
   enigma: number
   masterwork: boolean
+
+  /**
+     item level of the item currently equipped at the slot that this item could be equipped to
+  */
   currentEquippedItemLevel: number
   remodel: number
   dye: number
   dyeSecRemaining: number
+
+  /**
+     not read by the client
+  */
   dyeDate: bigint
   dyeExpiryDate: bigint
   acquisitionDate: bigint
+
+  /**
+     -1 = display acquisition date instead, -2 = Infinity
+  */
   secRemaining: bigint
   setId: number
   setIdForStatComparison: number
+
+  /**
+     hidden
+  */
   enchantAdvantage: number
+
+  /**
+     hidden
+  */
   enchantBonus: number
+
+  /**
+     hidden
+  */
   enchantBonusMaxPlus: number
   averageBrokerPrice: bigint
+
+  /**
+     hidden
+  */
   feedstock: number
+
+  /**
+     hidden
+  */
   dismantlePrice: bigint
   xp: bigint
   awakened: boolean
+
+  /**
+     See S_INVEN
+  */
   liberationStatus: number
   boundToItem: number
   pcbang: boolean

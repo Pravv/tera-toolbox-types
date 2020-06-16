@@ -6,6 +6,10 @@ export class C_COMMIT_CHANGE_USER_APPEARANCE_2 extends PacketBase {
   race: number
   gender: number
   appearance: Customize
+
+  /**
+     100
+  */
   unk: number
   details: number[]
 }

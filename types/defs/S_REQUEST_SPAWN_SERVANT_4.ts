@@ -12,6 +12,10 @@ export class S_REQUEST_SPAWN_SERVANT_4 extends PacketBase {
   dbid: bigint
   loc: Vec3
   w: number
+
+  /**
+     see S_REQUEST_SERVANT_INFO_LIST
+  */
   type: number
   id: number
   linkedNpcTemplateId: number
@@ -21,6 +25,10 @@ export class S_REQUEST_SPAWN_SERVANT_4 extends PacketBase {
   ownerId: bigint
   energy: number
   energyMax: number
+
+  /**
+     0: enter world, 1: enter visible range
+  */
   spawnType: number
   level: number
   fellowship: number

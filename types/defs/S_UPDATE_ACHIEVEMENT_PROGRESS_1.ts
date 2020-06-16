@@ -5,6 +5,10 @@ export class S_UPDATE_ACHIEVEMENT_PROGRESS_1_achievements_requirements {
   index: number
   unk: number
   amount: number
+
+  /**
+     amount is int64?
+  */
   unk2: number
 }
 

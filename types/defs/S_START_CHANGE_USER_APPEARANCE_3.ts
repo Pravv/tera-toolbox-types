@@ -2,6 +2,9 @@ import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common'
 
 
 export class S_START_CHANGE_USER_APPEARANCE_3 extends PacketBase {
+  /**
+     1 = race, 2 = gender, 3 = appearance
+  */
   type: number
   playerId: number
   gender: number
@@ -41,7 +44,15 @@ export class S_START_CHANGE_USER_APPEARANCE_3 extends PacketBase {
   unk21: number
   unk22: number
   unk23: number
+
+  /**
+     0-15
+  */
   weaponEnchantment: number
+
+  /**
+     100
+  */
   unk25: number
   item: number
   details: number[]

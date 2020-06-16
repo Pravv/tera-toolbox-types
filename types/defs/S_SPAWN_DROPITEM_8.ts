@@ -8,6 +8,10 @@ export class S_SPAWN_DROPITEM_8 extends PacketBase {
   item: number
   amount: number
   expiry: number
+
+  /**
+     true = just dropped, false = existing loot
+  */
   explode: boolean
   masterwork: boolean
   enchant: number

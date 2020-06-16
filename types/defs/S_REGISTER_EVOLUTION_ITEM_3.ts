@@ -30,7 +30,15 @@ export class S_REGISTER_EVOLUTION_ITEM_3 extends PacketBase {
   resultItemLevelMax: number
   price: bigint
   hideSuccessChance: boolean
+
+  /**
+     unsure
+  */
   destroyOnFailureChance: number
+
+  /**
+     unsure
+  */
   damageOnFailureChance: number
   materials: S_REGISTER_EVOLUTION_ITEM_3_materials[]
   successChances: S_REGISTER_EVOLUTION_ITEM_3_successChances[]

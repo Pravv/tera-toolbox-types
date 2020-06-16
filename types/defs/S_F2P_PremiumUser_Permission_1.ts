@@ -9,8 +9,16 @@ export class S_F2P_PremiumUser_Permission_1_unkArr {
 export class S_F2P_PremiumUser_Permission_1 extends PacketBase {
   unk1: number
   unk2: number
+
+  /**
+     80 3F
+  */
   unk3: number
   unk4: number
+
+  /**
+     80 3F
+  */
   unk5: number
   unkArr: S_F2P_PremiumUser_Permission_1_unkArr[]
 }

@@ -65,14 +65,30 @@ export class S_PLAYER_STAT_UPDATE_14 extends PacketBase {
   resistWeakeningBonus: number
   resistPeriodicBonus: number
   resistStunBonus: number
+
+  /**
+     level shown and used for e.g. damage calculations (was used for Blast from the Past)
+  */
   level: number
+
+  /**
+     see S_USER_STATUS
+  */
   status: number
   conditionLevel: number
   alive: boolean
   hpBonus: number
   mpBonus: number
+
+  /**
+     Stamina in English version
+  */
   condition: number
   contitionMax: number
+
+  /**
+     Resolve, Chi, Willpower, etc.
+  */
   stamina: number
   staminaMax: number
   staminaBonus: number
@@ -81,14 +97,34 @@ export class S_PLAYER_STAT_UPDATE_14 extends PacketBase {
   itemLevel: number
   edge: number
   edgePercentage: number
+
+  /**
+     milliseconds
+  */
   edgeTimeRemaining: number
   edgeMin: number
+
+  /**
+     actual character level used for e.g. learning skills (was used for Blast from the Past)
+  */
   trueLevel: number
   flightEnergy: number
   flightId: number
   flightSpeedMul: number
+
+  /**
+     sorc fire "edge" (becomes 4 for some reason)
+  */
   fireEdge: number
+
+  /**
+     sorc ice "edge" (becomes 4 for some reason)
+  */
   iceEdge: number
+
+  /**
+     sorc lightning "edge" (becomes 4 for some reason)
+  */
   lightningEdge: number
   adventureCoins: number
   adventureCoinsMax: number

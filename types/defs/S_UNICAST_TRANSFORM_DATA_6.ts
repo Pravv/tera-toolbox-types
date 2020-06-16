@@ -9,7 +9,15 @@ export class S_UNICAST_TRANSFORM_DATA_6_abnormals {
 export class S_UNICAST_TRANSFORM_DATA_6 extends PacketBase {
   serverId: number
   playerId: number
+
+  /**
+     Player being transformed into, or the user if none
+  */
   gameId: bigint
+
+  /**
+     0 = Un-transform, 1 = Transform, 2 = NPC transform, 3 = Same as 0?- no, Default = 1
+  */
   type: number
   isExpandTransform: boolean
   isAppear: boolean

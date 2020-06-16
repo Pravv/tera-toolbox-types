@@ -9,5 +9,9 @@ export class S_SPAWN_COLLECTION_4 extends PacketBase {
   w: number
   extractor: boolean
   extractorDisabled: boolean
+
+  /**
+     milliseconds remaining
+  */
   extractorDisabledTime: number
 }

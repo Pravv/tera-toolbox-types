@@ -12,10 +12,22 @@ export class S_GUILD_MEMBER_LIST_1_members {
   race: number
   class: number
   gender: number
+
+  /**
+     0 = online, 2 = offline
+  */
   status: number
   contributionCurrent: number
+
+  /**
+     maybe int64?
+  */
   contributionTotal: number
   unk3: number
+
+  /**
+     in seconds
+  */
   lastOnline: bigint
   name: string
   note: string
@@ -30,6 +42,10 @@ export class S_GUILD_MEMBER_LIST_1 extends PacketBase {
   guildFunds: bigint
   characters: number
   accounts: number
+
+  /**
+     0 = small, 1 = medium, 2 = large
+  */
   size: number
   creationDate: bigint
   last: number

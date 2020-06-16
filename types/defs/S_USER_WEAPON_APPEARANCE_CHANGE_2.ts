@@ -7,5 +7,9 @@ export class S_USER_WEAPON_APPEARANCE_CHANGE_2 extends PacketBase {
   unk1: number
   weaponEnchant: number
   styleWeapon: number
+
+  /**
+     false = ignore styleWeapon?
+  */
   unk2: boolean
 }

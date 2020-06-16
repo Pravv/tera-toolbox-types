@@ -7,7 +7,19 @@ export class S_INVEN_USERDATA_2 extends PacketBase {
   itemLevelInventory: number
   itemLevel: number
   tcat: bigint
+
+  /**
+     unsure
+  */
   brokerUseTcat: number
+
+  /**
+     unsure
+  */
   vipToken: bigint
+
+  /**
+     bought with money, not items
+  */
   boughtInventoryExpansions: number
 }
