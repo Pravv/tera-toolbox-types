@@ -11,4 +11,9 @@ export class C_GET_IN_SHUTTLE_1 extends PacketBase {
      normal world location
   */
   loc: Vec3
+
+  /**
+     relative to shuttles location/space
+  */
+  shuttleLoc: Vec3
 }

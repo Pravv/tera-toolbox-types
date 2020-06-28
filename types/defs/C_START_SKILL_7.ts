@@ -23,4 +23,5 @@ export class C_START_SKILL_7 extends PacketBase {
      (ex. charging skills, Ninja's Impact Bomb interrupting another skill)
   */
   target: bigint
+  unk2: boolean
 }

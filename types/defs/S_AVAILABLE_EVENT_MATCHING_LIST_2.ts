@@ -29,6 +29,11 @@ export class S_AVAILABLE_EVENT_MATCHING_LIST_2_quests_unkArray4 {
      2400
   */
   unk2: number
+
+  /**
+     0
+  */
+  unk3: number
 }
 
 export class S_AVAILABLE_EVENT_MATCHING_LIST_2_quests {

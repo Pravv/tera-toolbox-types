@@ -26,4 +26,5 @@ export class S_PARTY_MEMBER_STAT_UPDATE_3 extends PacketBase {
   stamina: number
   curRe: number
   maxRe: number
+  unk2: number
 }

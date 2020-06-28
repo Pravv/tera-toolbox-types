@@ -11,4 +11,9 @@ export class S_SHORTCUT_CHANGE_2 extends PacketBase {
      Corresponds to entry in ShortcutSetList (DataCenter)
   */
   id: number
+
+  /**
+     false = Default shortcut set (id is ignored)
+  */
+  enable: boolean
 }

@@ -13,4 +13,9 @@ export class C_USE_ITEM_3 extends PacketBase {
   unk1: number
   unk2: number
   unk3: number
+
+  /**
+     true?
+  */
+  unk4: boolean
 }

@@ -6,4 +6,5 @@ export class C_NOTIFY_LOCATION_IN_ACTION_4 extends PacketBase {
   skill: SkillId
   stage: number
   loc: Vec3
+  w: number
 }

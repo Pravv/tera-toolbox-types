@@ -10,4 +10,5 @@ export class S_INSTANT_DASH_3 extends PacketBase {
   */
   unk: number
   loc: Vec3
+  w: number
 }

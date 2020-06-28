@@ -41,6 +41,11 @@ export class S_REQUEST_STYLE_SHOP_MARK_PRODUCTLIST_1_list {
      type == 0 ? (1 or 2) : 0
   */
   unk6: number
+
+  /**
+     unk4 ? '판매불가' (Not Available) : ''
+  */
+  unk7: string
 }
 
 export class S_REQUEST_STYLE_SHOP_MARK_PRODUCTLIST_1 extends PacketBase {

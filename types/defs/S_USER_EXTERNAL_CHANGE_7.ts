@@ -47,4 +47,5 @@ export class S_USER_EXTERNAL_CHANGE_7 extends PacketBase {
   styleBackTranslationDebug: Vec3
   usedStyleHeadTransform: boolean
   styleBodyDye: number
+  showStyle: boolean
 }

@@ -12,4 +12,5 @@ export class C_COMMIT_CHANGE_USER_APPEARANCE_2 extends PacketBase {
   */
   unk: number
   details: number[]
+  shape: number[]
 }

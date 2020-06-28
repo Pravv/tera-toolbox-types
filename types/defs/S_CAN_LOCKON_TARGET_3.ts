@@ -6,4 +6,5 @@ export class S_CAN_LOCKON_TARGET_3 extends PacketBase {
   target: bigint
   unk: number
   skill: SkillId
+  success: boolean
 }

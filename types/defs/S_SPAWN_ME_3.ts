@@ -6,4 +6,5 @@ export class S_SPAWN_ME_3 extends PacketBase {
   loc: Vec3
   w: number
   alive: boolean
+  isLord: boolean
 }

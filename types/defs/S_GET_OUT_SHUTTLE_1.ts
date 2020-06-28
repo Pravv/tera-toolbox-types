@@ -7,4 +7,9 @@ export class S_GET_OUT_SHUTTLE_1 extends PacketBase {
   */
   shuttle: bigint
   gameId: bigint
+
+  /**
+     normal world location
+  */
+  loc: Vec3
 }

@@ -10,6 +10,7 @@ export class S_REQUEST_CITY_WAR_MAP_INFO_1_guilds {
   kills: number
   deaths: number
   towerHp: number
+  loc: Vec3
 }
 
 export class S_REQUEST_CITY_WAR_MAP_INFO_1 extends PacketBase {

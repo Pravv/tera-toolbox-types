@@ -13,6 +13,11 @@ export class S_SHOW_PARTY_MATCH_INFO_1_listings {
      LFG message
   */
   message: string
+
+  /**
+     leader name
+  */
+  leader: string
 }
 
 export class S_SHOW_PARTY_MATCH_INFO_1 extends PacketBase {

@@ -5,4 +5,5 @@ export class S_MOUNT_VEHICLE_2 extends PacketBase {
   gameId: bigint
   id: number
   skill: number
+  unk: boolean
 }

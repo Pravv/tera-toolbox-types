@@ -6,4 +6,5 @@ export class C_PRESS_SKILL_4 extends PacketBase {
   skill: SkillId
   press: boolean
   loc: Vec3
+  w: number
 }

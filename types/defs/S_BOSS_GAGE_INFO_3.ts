@@ -13,4 +13,9 @@ export class S_BOSS_GAGE_INFO_3 extends PacketBase {
   unk2: number
   curHp: bigint
   maxHp: bigint
+
+  /**
+     always 1?
+  */
+  unk3: number
 }

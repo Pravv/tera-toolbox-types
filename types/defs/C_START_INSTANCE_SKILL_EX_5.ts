@@ -8,4 +8,9 @@ export class C_START_INSTANCE_SKILL_EX_5 extends PacketBase {
   loc: Vec3
   dest: Vec3
   w: number
+
+  /**
+     false?
+  */
+  unk: boolean
 }

@@ -11,4 +11,5 @@ export class S_CREST_MESSAGE_2 extends PacketBase {
      6 for resets?
   */
   type: number
+  skill: number
 }

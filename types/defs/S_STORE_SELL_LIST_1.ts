@@ -3,6 +3,7 @@ import { Vec3, SkillId, Customize, PacketBase } from '../lib/Common'
 
 export class S_STORE_SELL_LIST_1_tabs_items {
   id: number
+  netPrice: bigint
 }
 
 export class S_STORE_SELL_LIST_1_tabs {

@@ -14,4 +14,5 @@ export class S_SPAWN_PROJECTILE_5 extends PacketBase {
   templateId: number
   unk2: number
   unk3: number
+  w: number
 }

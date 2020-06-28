@@ -6,4 +6,5 @@ export class S_START_CLIMBING_1 extends PacketBase {
   loc: Vec3
   w: number
   dest: Vec3
+  isClimbing: boolean
 }

@@ -20,4 +20,5 @@ export class C_SHOW_ITEM_TOOLTIP_EX_3 extends PacketBase {
      -1 on self
   */
   playerId: number
+  owner: string
 }

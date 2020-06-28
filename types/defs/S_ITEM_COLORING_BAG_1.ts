@@ -16,4 +16,5 @@ export class S_ITEM_COLORING_BAG_1 extends PacketBase {
   */
   dye: number
   unk4: bigint
+  unk5: bigint
 }

@@ -8,4 +8,5 @@ export class C_VIEW_WARE_2 extends PacketBase {
      See S_VIEW_WARE_EX
   */
   type: number
+  offset: number
 }

@@ -6,6 +6,7 @@ export class S_ACTION_STAGE_9_animSeq {
   duration: number
   xyRate: number
   zRate: number
+  distance: number
 }
 
 export class S_ACTION_STAGE_9 extends PacketBase {

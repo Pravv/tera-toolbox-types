@@ -8,4 +8,5 @@ export class S_USER_STATUS_3 extends PacketBase {
      0 = normal, 1 = in combat, 2 = campfire, 3 = on pegasus
   */
   status: number
+  bySkill: boolean
 }

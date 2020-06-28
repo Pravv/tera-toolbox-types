@@ -23,4 +23,9 @@ export class S_DESTROY_GUILD_TOWER_1 extends PacketBase {
      The name of the player who destroyed the tower
   */
   name: string
+
+  /**
+     The guild name of the tower that got destroyed
+  */
+  targetGuildName: string
 }

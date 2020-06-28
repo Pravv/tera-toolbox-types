@@ -25,4 +25,9 @@ export class S_END_USER_PROJECTILE_4 extends PacketBase {
      (new)
   */
   unk4: number
+
+  /**
+     (new)
+  */
+  unk5: number
 }

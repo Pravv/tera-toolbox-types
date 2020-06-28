@@ -7,4 +7,9 @@ export class S_NPC_LOCATION_3 extends PacketBase {
   w: number
   speed: number
   dest: Vec3
+
+  /**
+     see C_PLAYER_LOCATION.type
+  */
+  type: number
 }

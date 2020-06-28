@@ -14,4 +14,9 @@ export class S_DEFEND_SUCCESS_3 extends PacketBase {
      always 0?
   */
   unk4: number
+
+  /**
+     brawler perfect blocks
+  */
+  perfect: boolean
 }

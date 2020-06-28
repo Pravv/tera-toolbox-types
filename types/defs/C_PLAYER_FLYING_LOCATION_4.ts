@@ -22,4 +22,9 @@ export class C_PLAYER_FLYING_LOCATION_4 extends PacketBase {
      Normalized control facing direction (ignored?)
   */
   control: Vec3
+
+  /**
+     Normalized destination facing direction
+  */
+  direction: Vec3
 }

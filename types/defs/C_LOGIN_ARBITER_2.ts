@@ -11,4 +11,5 @@ export class C_LOGIN_ARBITER_2 extends PacketBase {
   language: number
   patchVersion: number
   name: string
+  ticket: number[]
 }

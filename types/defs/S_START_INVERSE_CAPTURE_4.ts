@@ -12,4 +12,5 @@ export class S_START_INVERSE_CAPTURE_4 extends PacketBase {
   unk: number
   skill: SkillId
   loc: Vec3
+  success: boolean
 }

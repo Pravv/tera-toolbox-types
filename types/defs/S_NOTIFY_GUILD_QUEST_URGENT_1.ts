@@ -8,4 +8,9 @@ export class S_NOTIFY_GUILD_QUEST_URGENT_1 extends PacketBase {
   type: number
   zoneId: number
   templateId: number
+
+  /**
+     "@GuildQuest:questId" for announce, "\0" for spawn and death
+  */
+  quest: string
 }

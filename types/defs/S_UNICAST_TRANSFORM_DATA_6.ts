@@ -75,4 +75,5 @@ export class S_UNICAST_TRANSFORM_DATA_6 extends PacketBase {
   guildName: string
   guildLogo: string
   guildRank: string
+  name: string
 }
