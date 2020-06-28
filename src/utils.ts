@@ -1,6 +1,6 @@
 export const NESTED_TYPES = ['array', 'object'];
 
-export interface lookAheadIterator<T> {
+export interface LookAheadIterator<T> {
   [Symbol.iterator](): Generator<T>;
 
   lookAhead(n: number): T;
@@ -10,14 +10,14 @@ export interface lookAheadIterator<T> {
   readonly position;
 }
 
-export function makeLookAheadIterator<ValueT>(values: ValueT[], start: number = 0): lookAheadIterator<ValueT> {
+export function makeLookAheadIterator<ValueT>(values: ValueT[], start: number = 0): LookAheadIterator<ValueT> {
   let nextIndex = start;
   const end = values.length - 1;
 
   return {
     * [Symbol.iterator](): Generator<ValueT> {
       while (1) {
-        if (nextIndex >= end) return { value: undefined, done: true };
+        if (nextIndex > end) return { value: undefined, done: true };
         yield values[nextIndex++];
       }
     },
@@ -27,7 +27,7 @@ export function makeLookAheadIterator<ValueT>(values: ValueT[], start: number = 
       return values[nextIndex + count];
     },
     skip(n): void {
-      if (n == null || nextIndex + n > end) throw RangeError();
+      if (n == null || nextIndex + n > end + 1) throw RangeError();
       nextIndex += n;
     },
 
