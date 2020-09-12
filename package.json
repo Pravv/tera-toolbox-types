@@ -19,7 +19,7 @@
   "homepage": "https://github.com/Pravv/tera-toolbox-types#readme",
   "dependencies": {
     "lodash": "^4.17.15",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.2"
   },
